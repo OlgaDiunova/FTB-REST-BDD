@@ -6,7 +6,7 @@ Feature: Testing FTB REST API AIRCRAFTS resource
     When client gets details of Aircraft id=12
     Then aircraft data to be manufacturer='Su' and model='Su-24' and number of seats=494
 
-  Scenario: Get specific aircraft data by its ID where number of seats is null
+  Scenario: Get specific aircraft data by its ID when number of seats is null
     Given FTB is up and running and the tests are configured
     When client gets details of Aircraft id=3138
     Then returned aircraft data to be manufacturer='string7676' and model='string8787' and null number of seats
